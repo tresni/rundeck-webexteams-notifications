@@ -23,16 +23,14 @@ public class WebExTeamsNotificationPlugin implements NotificationPlugin {
     @PluginProperty(
             title = "Room",
             description = "Set the WebEx Team room to send notification messages to.",
-            required = true
-
-    )
+            required = true)
     private String room;
 
     @PluginProperty(
             title = "Access Token",
             description = "Access Token to post notifications with.",
-            required = true
-    )
+            required = true,
+            scope = PropertyScope.Project)
     private String token;
 
 
