@@ -1,9 +1,10 @@
 package com.lostinthebox.rundeck.plugin.webex;
 
-import com.dtolabs.rundeck.plugins.notification.NotificationPlugin;
 import com.dtolabs.rundeck.core.plugins.Plugin;
+import com.dtolabs.rundeck.core.plugins.configuration.PropertyScope;
 import com.dtolabs.rundeck.plugins.descriptions.PluginDescription;
 import com.dtolabs.rundeck.plugins.descriptions.PluginProperty;
+import com.dtolabs.rundeck.plugins.notification.NotificationPlugin;
 
 import com.ciscospark.*;
 
@@ -11,10 +12,10 @@ import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 
-import java.net.URI;
-import java.util.*;
 import java.io.StringWriter;
 import java.io.IOException;
+import java.net.URI;
+import java.util.*;
 
 @Plugin(name="WebExTeams", service="Notification")
 @PluginDescription(title="WebEx Teams Plugin", description="A plugin to send notifications to WebEx Teams")
