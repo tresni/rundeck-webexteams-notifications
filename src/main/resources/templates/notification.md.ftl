@@ -10,5 +10,3 @@ by ${execution.context.job.username} <#t>
 <#elseif trigger == "success">
  **succeeded**
 </#if>
-
-[View Output](${execution.href})

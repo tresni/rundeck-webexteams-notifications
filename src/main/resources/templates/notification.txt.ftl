@@ -3,11 +3,10 @@ Execution of job <#t>
 #${execution.context.job.execid} <#t>
 by ${execution.context.job.username} <#t>
 <#if trigger == "start">
- started
+ started: <#t>
 <#elseif trigger == "failure">
- failed
+ failed: <#t>
 <#elseif trigger == "success">
- succeeded
+ succeeded: <#t>
 </#if>
-
 ${execution.job.href}
