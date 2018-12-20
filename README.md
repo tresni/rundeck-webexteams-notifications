@@ -2,6 +2,10 @@
 
 A notification plugin for Rundeck to send notifications to WebEx Teams.
 
+## Dependencies
+
+* [spark-java sdk](https://github.com/webex/spark-java-sdk)
+
 ## Installation instructions
 
 1. Build a snapshot from source using `gradle build`
