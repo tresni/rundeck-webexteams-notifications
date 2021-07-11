@@ -17,8 +17,8 @@ import java.io.IOException;
 import java.net.URI;
 import java.util.*;
 
-@Plugin(name="WebExTeams", service="Notification")
-@PluginDescription(title="WebEx Teams Plugin", description="A plugin to send notifications to WebEx Teams")
+@Plugin(service="Notification", name="WebExTeams")
+@PluginDescription(title="WebExTeams Plugin", description="A plugin to send notifications to WebEx Teams")
 public class WebExTeamsNotificationPlugin implements NotificationPlugin {
 
     @PluginProperty(
@@ -35,6 +35,7 @@ public class WebExTeamsNotificationPlugin implements NotificationPlugin {
     private String token;
 
 
+    @Override
     public boolean postNotification(String trigger, Map executionData, Map config) {
         Map<String, Object> model = new HashMap();
         model.put("trigger", trigger);

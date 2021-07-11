@@ -9,7 +9,7 @@ apply plugin: 'java'
 
 version = '1.0'
 ext.rundeckVersion = '2.6.9'
-ext.rundeckPluginVersion= '1.2'
+ext.rundeckPluginVersion= '1.1'
 ext.pluginClassNames = 'com.lostinthebox.rundeck.plugin.webex.WebExTeamsNotificationPlugin'
 
 configurations{
